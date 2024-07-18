@@ -52,8 +52,6 @@ st.markdown(
     unsafe_allow_html=True)
 
 # Sidebar para el menú principal
-logos_expediciones = (r'Proyecto_final_Himalaya\Imagenes\logos_expediciones.png')
-st.sidebar.image(logos_expediciones, width=250)
 st.sidebar.header('Opciones', divider='rainbow')
 st.sidebar.markdown(
     """
