@@ -218,7 +218,7 @@ if menu_principal == '📈 Análisis Exploratorio':
             st.image(imagen_amadablam,width=10, use_column_width=True)
         
         with col7:
-            imagen3 = (r'Imagenes\grafica_picos_otoño.png')
+            imagen3 = (r'Imagenes\grafica_picos_otono.png')
             st.image(imagen3, width=1000)
         
         st.markdown(
@@ -452,8 +452,8 @@ if menu_principal == '📈 Análisis Exploratorio':
         imagen6 = (r'Imagenes\imagen6.PNG')
         st.image(imagen6,use_column_width=True)
         
-        españoles_fallecidos = (r'Imagenes\5españoles_fallecidos.PNG')
-        st.image(españoles_fallecidos,use_column_width=True)
+        espanoles_fallecidos = (r'Imagenes\5espanoles_fallecidos.PNG')
+        st.image(espanoles_fallecidos,use_column_width=True)
         
         st.markdown(
         """
@@ -496,12 +496,12 @@ if menu_principal == '📈 Análisis Exploratorio':
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>De los alpinistas del Himalaya, ¿Cuántos escalaron solos y cuantos acompañados?</h1></div>", unsafe_allow_html=True)
         
         solos_fallecidos = members[(members['solo']=='Yes') & (members['died']=='Yes')].value_counts().sum()
-        acompañados_fallecidos = members[(members['solo']=='No') & (members['died']=='Yes')].value_counts().sum()
+        acompanados_fallecidos = members[(members['solo']=='No') & (members['died']=='Yes')].value_counts().sum()
         total_miembros = members.value_counts().sum()
         porcentaje_miembros_solos = (solos_fallecidos/total_miembros)*100
         porcentaje_miembros_solos.round(4)
-        porcentaje_miembros_acompañados = (acompañados_fallecidos/total_miembros)*100
-        porcentaje_miembros_acompañados.round(4)
+        porcentaje_miembros_acompanados = (acompanados_fallecidos/total_miembros)*100
+        porcentaje_miembros_acompanados.round(4)
         
         st.markdown(
         """
