@@ -75,11 +75,11 @@ st.sidebar.markdown("💀 A partir de 7.500m es Zona de Muerte.")
 
 
 #---LECTURA---#
-expeditions = pd.read_csv('himalayan_expeditions_copy.csv')
-members = pd.read_csv('members_copy.csv')
-peaks = pd.read_csv('peaks_copy.csv')
-peaks_original = pd.read_csv('peaks.csv')
-expeditions_original = pd.read_csv('expeditions.csv')
+expeditions = pd.read_csv('Proyecto_final_Himalaya/himalayan_expeditions_copy.csv')
+members = pd.read_csv('Proyecto_final_Himalaya/members_copy.csv')
+peaks = pd.read_csv('Proyecto_final_Himalaya/peaks_copy.csv')
+peaks_original = pd.read_csv('Proyecto_final_Himalaya/peaks.csv')
+expeditions_original = pd.read_csv('Proyecto_final_Himalaya/expeditions.csv')
 
 #---MENU PRINCIPAL---#
 menu_principal = option_menu(None, ['📌 Introducción', "📈 Análisis Exploratorio", "🚧 Power BI", "🌐 Modelo", "🏆 Conclusión"], orientation="horizontal",
@@ -196,10 +196,10 @@ if menu_principal == '📈 Análisis Exploratorio':
         #---PREGUNTA PRIMERA---#
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuál fue la primera expedición en llegar a la cima del Everest?</h1></div>", unsafe_allow_html=True)
         
-        imagen7 = (r'Imagenes\imagen7.jpg')
+        imagen7 = ('Imagenes/imagen7.jpg')
         st.image(imagen7,use_column_width=True, width=600)
         
-        imagen_consulta = (r'Imagenes\consulta.PNG')
+        imagen_consulta = ('Imagenes/consulta.PNG')
         st.image(imagen_consulta,use_column_width=True)
         
         st.markdown(
@@ -214,11 +214,11 @@ if menu_principal == '📈 Análisis Exploratorio':
         
         col3, col7 = st.columns(2)
         with col3:
-            imagen_amadablam = (r'Imagenes\imagen3.png')
+            imagen_amadablam = ('Imagenes/imagen3.png')
             st.image(imagen_amadablam,width=10, use_column_width=True)
         
         with col7:
-            imagen3 = (r'Imagenes\grafica_picos_otono.png')
+            imagen3 = ('Imagenes/grafica_picos_otono.png')
             st.image(imagen3, width=1000)
         
         st.markdown(
@@ -234,10 +234,10 @@ if menu_principal == '📈 Análisis Exploratorio':
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Por qué hay ciertas expediciones que nunca terminaron?</h1></div>", unsafe_allow_html=True)
         col5, col6 = st.columns(2)
         with col5:
-            imagen5 = (r'Imagenes\5_razones_abandono.png')
+            imagen5 = ('Imagenes/5_razones_abandono.png')
             st.image(imagen5,width=1070)
         with col6:
-            imagen6 = (r'Imagenes\mal_tiempo.jpg')
+            imagen6 = ('Imagenes/mal_tiempo.jpg')
             st.image(imagen6,width=1120) 
         st.markdown(
         """
@@ -253,11 +253,11 @@ if menu_principal == '📈 Análisis Exploratorio':
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuántas expediciones subieron con oxígeno?</h1></div>", unsafe_allow_html=True)
         col5, col6 = st.columns(2)
         with col5:
-            imagen2 = (r'Imagenes\imagen2.png')
+            imagen2 = ('Imagenes/imagen2.png')
             st.image(imagen2,width=1000)
         
         with col6:
-            imagen_oxigeno = (r'Imagenes\oxigeno.jpg')
+            imagen_oxigeno = ('Imagenes/oxigeno.jpg')
             st.image(imagen_oxigeno,width=1200)
     
         st.markdown(
@@ -270,7 +270,7 @@ if menu_principal == '📈 Análisis Exploratorio':
         
         #---PREGUNTA QUINTA---#
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuáles son las 50 expediciones con más miembros?</h1></div>", unsafe_allow_html=True)
-        miembros_expediciones = (r'Imagenes\50miembros_expediciones.PNG')
+        miembros_expediciones = ('Imagenes/50miembros_expediciones.PNG')
         st.image(miembros_expediciones,use_column_width=True)
         st.markdown(
         """
@@ -357,11 +357,11 @@ if menu_principal == '📈 Análisis Exploratorio':
     
         col9, col10 = st.columns(2)
         with col9:
-            climbed_vs_unclimbed = (r'Imagenes\grafico_climbed_unclimbed.png')
+            climbed_vs_unclimbed = ('Imagenes/grafico_climbed_unclimbed.png')
             st.image(climbed_vs_unclimbed,width=800)
             
         with col10:
-            cima = (r'Imagenes\cima.jpg')
+            cima = ('Imagenes/cima.jpg')
             st.image(cima,width=1060)
         
         st.markdown(
@@ -376,7 +376,7 @@ if menu_principal == '📈 Análisis Exploratorio':
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuáles son las nacionalidades con más primeras ascensiones? ¿Cuál fue el primer país en intentar llegar a la cumbre del Everest sin éxito?</h1></div>", unsafe_allow_html=True)
         colpaises1, colpaises2 = st.columns(2)
         with colpaises1:
-            primeras_ascensiones = (r'Imagenes\japon_nepal_primeras.jpg')
+            primeras_ascensiones = ('Imagenes/japon_nepal_primeras.jpg')
             st.image(primeras_ascensiones, width=1000)
         
         with colpaises2:
@@ -394,7 +394,7 @@ if menu_principal == '📈 Análisis Exploratorio':
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuál es el pico mas letal?</h1></div>", unsafe_allow_html=True)
         col12, col13 = st.columns(2)
         with col12:
-            imagen_letal = (r'Imagenes\picos_letales.png')
+            imagen_letal = ('Imagenes/picos_letales.png')
             st.image(imagen_letal,width=1070)
     
         with col13:
@@ -449,10 +449,10 @@ if menu_principal == '📈 Análisis Exploratorio':
         
     #---PREGUNTA PRIMERA---#
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuál ha sido el suceso más grave en la cordillera del Himalaya por españoles?</h1></div>", unsafe_allow_html=True)
-        imagen6 = (r'Imagenes\imagen6.PNG')
+        imagen6 = ('Imagenes/imagen6.PNG')
         st.image(imagen6,use_column_width=True)
         
-        espanoles_fallecidos = (r'Imagenes\5espanoles_fallecidos.PNG')
+        espanoles_fallecidos = ('Imagenes/5espanoles_fallecidos.PNG')
         st.image(espanoles_fallecidos,use_column_width=True)
         
         st.markdown(
@@ -465,7 +465,7 @@ if menu_principal == '📈 Análisis Exploratorio':
     #---PREGUNTA SEGUNDA---#
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuántos miembros de las expediciones fueron afectados a lo largo de los años?</h1></div>", unsafe_allow_html=True)
         
-        miembros_fallecidos = (r'Imagenes\miembros_afectados.png')
+        miembros_fallecidos = ('Imagenes/miembros_afectados.png')
         st.image(miembros_fallecidos,use_column_width=True)
             
         st.markdown(
@@ -480,7 +480,7 @@ if menu_principal == '📈 Análisis Exploratorio':
         
         col18, col19 = st.columns(2)
         with col18:
-            imagen5 = (r'Imagenes\roles_expediciones.png')
+            imagen5 = ('Imagenes/roles_expediciones.png')
             st.image(imagen5,width=1000)
         
         with col19:
@@ -520,7 +520,7 @@ if menu_principal == '📈 Análisis Exploratorio':
             primera_mujer
         
         with col21:
-            primera_mujer_everest = (r'Imagenes\primera_mujer_everest.PNG')
+            primera_mujer_everest = ('Imagenes/primera_mujer_everest.PNG')
             st.image(primera_mujer_everest,width=1000)        
         st.markdown(
         """
@@ -665,8 +665,8 @@ if menu_principal == '🏆 Conclusión':
     
     st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>Masificacion y sus consecuencias medioambientales ♻️</h1></div>", unsafe_allow_html=True)
     
-    personas_everest_gif = (r'Imagenes\videoagif.gif')
-    basura_en_everest = (r'Imagenes\basura_en_everest.jpg')
+    personas_everest_gif = ('Imagenes/videoagif.gif')
+    basura_en_everest = ('Imagenes/basura_en_everest.jpg')
     
     colconclusion3, colconclusion4 = st.columns(2)
     with colconclusion3:
