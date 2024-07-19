@@ -196,7 +196,7 @@ if menu_principal == '📈 Análisis Exploratorio':
         #---PREGUNTA PRIMERA---#
         st.markdown("<div style='padding: 10px; border-radius: 5px;'><h1 style='text-align: center; color: #ffffff; font-size: 40px; margin: 0; text-shadow: 6px 6px 6px #000000;'>¿Cuál fue la primera expedición en llegar a la cima del Everest?</h1></div>", unsafe_allow_html=True)
         
-        imagen7 = ('Imagenes/imagen7.jpg')
+        imagen7 = ('Proyecto_final_Himalaya/Imagenes/imagen7.jpg')
         st.image(imagen7,use_column_width=True, width=600)
         
         imagen_consulta = ('Imagenes/consulta.PNG')
